@@ -27,8 +27,8 @@ public class TestCase5 {
 
         testCasesHeaderItem.click(); // driver navigate to "Test Case" page
         driver.wait(1000);
-        if(driver.getTitle().equals("Automation Practice Website for UI Testing - Test Cases") &&
-        driver.getCurrentUrl().equals("https://automationexercise.com/test_cases"))
+        if(driver.getTitle().equals(expectedTitle) &&
+        driver.getCurrentUrl().equals(expectedURL))
             System.out.println("Navigation to the \"Test case\" page PASSED ");
         else System.out.println("Navigation to the \"Test case\" page FAIL ");
 
