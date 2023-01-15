@@ -5,7 +5,7 @@ import utils.Driver;
 
 public class TestCase5 {
 
-    public static void main(String[] args) throws InterruptedException {
+    public static void main(String[] args) {
 
         /*
         Test Case 5: Validate Automation Exercise site Test Cases pageGiven user navigates to “”
@@ -26,7 +26,7 @@ public class TestCase5 {
         WebElement testCasesHeaderItem = driver.findElement(By.xpath("(//ul[@class='nav navbar-nav']/li)[5]/a"));
 
         testCasesHeaderItem.click(); // driver navigate to "Test Case" page
-        driver.wait(1000);
+
         if(driver.getTitle().equals(expectedTitle) &&
         driver.getCurrentUrl().equals(expectedURL))
             System.out.println("Navigation to the \"Test case\" page PASSED ");
